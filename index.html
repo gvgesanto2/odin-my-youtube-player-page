@@ -22,7 +22,73 @@
 <body>
   <div class="container" id="container">
     <header id="header" class="header">
-      Header
+      <div class="header__start">
+        <button class="icon-btn">
+          <svg class="icon--md">
+            <use xlink:href="img/sprite.svg#menu"></use>
+          </svg>
+        </button>
+        <img src="img/logo.png" alt="Youtube Logo" class="header__logo">
+      </div>
+
+      <div class="header__center">
+        <form action="#" class="search-bar mr--sm">
+          <input type="text" class="search-bar__input" placeholder="Search">
+          <button type="submit" class="search-bar__btn">
+            <svg class="icon--md">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="tooltip-container">
+          <button class="icon-btn voice-btn">
+            <svg class="icon--md">
+              <use xlink:href="img/sprite.svg#mic"></use>
+            </svg>
+          </button>
+          <span class="tooltip tooltip--down">
+            Search with your voice
+          </span>
+        </div>
+      </div>
+
+      <div class="header__end">
+        <nav class="user-nav">
+          <div class="tooltip-container mr--sm">
+            <button class="icon-btn">
+              <svg class="icon--md">
+                <use xlink:href="img/sprite.svg#plus-square"></use>
+              </svg>
+            </button>
+            <span class="tooltip tooltip--down">
+              Create
+            </span>
+          </div>
+          <div class="tooltip-container mr--sm">
+            <button class="icon-btn">
+              <svg class="icon--md">
+                <use xlink:href="img/sprite.svg#grid"></use>
+              </svg>
+            </button>
+            <span class="tooltip tooltip--down">
+              YouTube apps
+            </span>
+          </div>
+          <div class="tooltip-container mr--sm">
+            <button class="icon-btn">
+              <svg class="icon--md">
+                <use xlink:href="img/sprite.svg#bell"></use>
+              </svg>
+            </button>
+            <span class="tooltip tooltip--down">
+              Notifications
+            </span>
+          </div>
+          <button class="user-nav__user-btn">
+            <img src="img/user.jpg" alt="User photo" class="round-img--sm">
+          </button>
+        </nav>
+      </div>
     </header>
     <div class="content" id="content">
       <main id="video-view" class="video-view">

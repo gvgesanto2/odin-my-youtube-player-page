@@ -20,10 +20,17 @@
   /* Other variables */
   --text-primary: #030303;
   --text-secondary: var(--dark-grey-5);
-  --background-color: var(--light-grey-1);
+  --bg-color: var(--light-grey-1);
 
   /* Header */
   --header-height: 5.6rem;
+  --header-bg: rgba(255, 255, 255, 0.98);
+
+  /* Search Bar */
+  --search-bar-height: 4rem;
+  --search-input-color: hsl(0, 0%, 6.7%);
+  --search-btn-width: 6.4rem;
+  --shadow-inset-light: inset 0 1px 2px #eee;
 }
 
 /* Resetting */
@@ -50,6 +57,25 @@ body {
 a {
   text-decoration: none;
   color: var(--text-primary);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  color: inherit;
+  fill: currentColor;
 }
 
 img {

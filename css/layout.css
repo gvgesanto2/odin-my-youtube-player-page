@@ -1,24 +1,66 @@
+/* ////////////////////////////// */
+/* OVERALL LAYOUT */
+/* ///////////////////////////// */
+
+/* Main container */
 .container {
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
 }
 
+/* Main content */
 .content {
   display: flex;
   padding: 2.5rem 10rem;
+  margin-top: var(--header-height);
 }
 
+/* Header */
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: var(--header-height);
+  z-index: 100;
 
-  background-color: orange;
+  background-color: var(--header-bg);
+  padding: 0 2.5rem;
 }
 
+.header__start {
+  display: flex;
+  align-items: center;
+}
+
+.header__center {
+  flex: 0 1 72.8rem;
+
+  display: flex;
+  align-items: center;
+  margin-left: 8rem;
+}
+
+.header__end {
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+.header__logo {
+  height: var(--header-height);
+  width: auto;
+}
+
+/* Video view */
 .video-view {
   flex: 0 0 75%;
 
   background-color: blue;
 }
 
+/* Sidebar */
 .sidebar {
   flex: 1;
 
