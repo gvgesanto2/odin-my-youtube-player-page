@@ -1,0 +1,28 @@
+.container {
+  background-color: var(--background-color);
+}
+
+.content {
+  display: flex;
+
+}
+
+.header {
+  height: var(--header-height);
+
+  background-color: orange;
+}
+
+.video-view {
+  flex: 0 0 75%;
+
+  background-color: blue;
+}
+
+.sidebar {
+  flex: 1;
+
+  /* For testing purposes */
+  height: 450rem;
+  background: red;
+}

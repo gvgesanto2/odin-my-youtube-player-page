@@ -20,6 +20,10 @@
   /* Other variables */
   --text-primary: #030303;
   --text-secondary: var(--dark-grey-5);
+  --background-color: var(--light-grey-1);
+
+  /* Header */
+  --header-height: 5.6rem;
 }
 
 /* Resetting */
